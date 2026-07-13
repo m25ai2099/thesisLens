@@ -1,0 +1,13 @@
+data:
+  ethos_path: "data/raw/ethos.parquet"
+  shodhganga_path: "data/raw/shodhganga.parquet"
+  sample_size: 5000
+
+models:
+  abstract_gen: "meta-llama/Llama-3-8B-Instruct"
+  embeddings_en: "allenai/specter2"
+  embeddings_multilingual: "google/muril-base-cased"
+
+evaluation:
+  bertscore_threshold: 0.82
+  ndcg_k: 10
